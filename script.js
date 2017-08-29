@@ -35,3 +35,39 @@ is more than one character in the string. Return `val` and set `majorKey` to the
 
 15. Your answer should be a string value that equals 7. Is that what you got?
 */
+
+var majorKey = 42;
+
+if (majorKey >= 53) {
+    majorKey + 42;
+} else {
+    majorKey - 13;
+};
+//  majorKey === 29
+
+majorKey = majorKey + '11';
+//  majorKey === "4211"
+
+var keyChars = []; 
+console.log(majorKey);
+for (var i = 0; i < majorKey.length; i++) {
+    keyChars[i] = majorKey.charAt(i);
+    console.log(i);
+};
+// printing undefined or NAN through our attempts
+console.log("keyChars" , keyChars);
+keyChars.pop();
+keyChars.shift();
+// should be removing the first and last index from the array; current array is undefined/empty
+
+var someThing = function() {
+    for (var i = 1; i > keyChars.length; i--) { // unsure of where i should be set to (0? the top/end?)
+    someThing = keyChars[i];
+    };
+};
+
+majorKey = parseInt(majorKey);
+someThing = parseInt(someThing);
+
+majorKey = majorKey + someThing;
+// if 
